@@ -1,0 +1,24 @@
+.site-header {
+	row-gap: 0;
+}
+
+.primary-navigation {
+	margin: min(20px, calc(0.4 * var(--header--padding))) 0 0 0;
+	width: 100%;
+}
+
+ul.header-actions {
+	margin-left: auto;
+}
+
+.site-header .custom-logo {
+	margin-left: 0;
+}
+
+.site-branding {
+	width: 100%;
+}
+
+.site-header .site-logo {
+	display: flex;
+}

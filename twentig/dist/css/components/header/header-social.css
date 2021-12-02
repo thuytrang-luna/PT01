@@ -1,0 +1,7 @@
+.menu-search + .social-item {
+	margin-left: 25px;
+}
+
+.header-actions .social-item:first-child {
+	margin-left: calc(0px - var(--primary-nav--padding));
+}

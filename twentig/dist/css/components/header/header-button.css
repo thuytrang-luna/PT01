@@ -1,0 +1,34 @@
+.primary-navigation .menu-button a {
+	text-decoration: none !important;
+	padding-left: 16px;
+	padding-right: 16px;
+	font-weight: var(--button--font-weight);
+	font-family: var(--button--font-family);
+	border-radius: var(--button--border-radius);
+	text-transform: none;
+	letter-spacing: normal;
+}
+
+#site-navigation .menu-button a,
+#site-navigation .menu-button a:focus {
+	background-color:var(--header--color-text);
+	color: var(--header--color-background, var(--global--color-background));
+}
+
+#site-navigation .menu-button a:hover,
+#site-navigation .menu-button a:focus {
+	opacity: 0.9;
+	outline-offset: 4px !important;
+}
+
+.social-item + .menu-button {
+	margin-left: 25px;
+}
+
+.menu-search + .menu-button {
+	margin-left: 35px;
+}
+
+.header-actions .menu-button:last-child {
+	margin-right: var(--primary-nav--padding);
+}

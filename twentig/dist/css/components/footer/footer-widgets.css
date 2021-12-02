@@ -1,0 +1,39 @@
+.widget-area {
+	font-size: min(var(--footer--font-size), 18px);
+	color: var(--widgets--color-text, var(--footer--color-text));
+}
+
+.tw-footer-widgets-bg .widget-area {
+	background-color: var(--widgets--color-background, var(--footer--color-background));
+	max-width: none;
+	padding: calc(1.333 * var(--global--spacing-vertical)) calc((100% - var(--responsive--alignwide-width)) / 2);
+}
+
+.tw-footer-widgets-full .widget-area {
+	padding-left: var(--responsive--alignfull-padding);
+	padding-right: var(--responsive--alignfull-padding);
+	max-width: none;
+}
+
+.tw-footer-monocolor .widget-area {
+	padding-bottom: calc(0.666 * var(--global--spacing-vertical));
+}
+
+.widget-area .widget a {
+	color: var(--widgets--color-link, var(--footer--color-link));
+}
+
+@media (max-width: 481px) {
+
+	.widget-area > * {
+		margin-top: var(--global--spacing-vertical);
+		margin-bottom: var(--global--spacing-vertical);
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+
+	.widget-area {
+		column-gap: 40px;
+	}
+}

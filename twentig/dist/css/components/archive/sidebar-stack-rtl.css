@@ -1,0 +1,22 @@
+.tw-blog-stack.tw-blog-separator .site-main > * {
+	margin-top: calc(2 * var(--global--spacing-vertical));
+	margin-bottom: calc(2 * var(--global--spacing-vertical));
+}
+
+.tw-blog-stack.tw-blog-separator .site-main > *:first-child {
+	margin-top: 0;
+}
+
+.tw-blog-stack.tw-blog-separator .site-main > *:last-child {
+	margin-bottom: 0;
+}
+
+.tw-blog-stack.tw-blog-separator .entry-footer {
+	padding-top: calc(0.5 * var(--global--spacing-unit));
+	padding-bottom: calc(2 * var(--global--spacing-vertical));
+}
+
+.tw-blog-stack.tw-blog-minimal .entry-footer {
+	padding-top: calc(0.5 * var(--global--spacing-unit));
+	padding-bottom: 0;
+}

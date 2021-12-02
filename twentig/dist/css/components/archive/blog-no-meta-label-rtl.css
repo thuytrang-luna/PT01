@@ -1,0 +1,29 @@
+.tw-no-meta-label:not(.single) .entry-footer > span:not(:last-child)::after,
+.tw-no-meta-label:not(.single) .post-taxonomies > span::after,
+.tw-no-meta-label:not(.single) .entry-footer > p::after {
+	content: "\00B7";
+	line-height: 0;
+	margin: 0 8px;
+}
+
+.tw-no-meta-label .post-taxonomies:last-child > span:last-child::after {
+	display: none;
+}
+
+.tw-no-meta-label:not(.single) .entry-footer,
+.tw-no-meta-label:not(.single) .post-taxonomies {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tw-blog-text-center .post-taxonomies {
+	justify-content: center;
+}
+
+.tw-no-meta-label:not(.single) .entry-footer .posted-on {
+	margin-left: 0;
+}
+
+.tw-no-meta-label .tags-links a::before {
+	content: "#";
+}

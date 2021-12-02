@@ -1,0 +1,8 @@
+.primary-navigation {
+	flex-grow: 1;
+	margin-left: 40px;
+}
+
+ul.header-actions {
+	margin-left: auto;
+}

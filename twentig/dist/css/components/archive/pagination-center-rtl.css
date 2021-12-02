@@ -1,0 +1,23 @@
+.navigation .page-numbers {
+	min-width: auto;
+}
+
+.navigation .page-numbers:not(.prev):not(.next):not(.dots) {
+	padding: 0 5px;
+}
+
+.navigation .nav-links {
+	justify-content: center;
+}
+
+.navigation .nav-links .next {
+	margin-right: 20px;
+}
+
+.navigation .nav-links .prev {
+	margin-left: 20px;
+}
+
+.navigation .nav-short {
+	display: none;
+}

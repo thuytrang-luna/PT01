@@ -1,0 +1,252 @@
+body.toplevel_page_twentig {
+	background-color: #f5f5f7;
+}
+
+.toplevel_page_twentig #wpcontent {
+	padding: 0 24px;
+}
+
+.toplevel_page_twentig .update-nag,
+.toplevel_page_twentig #wpbody-content > .notice,
+.toplevel_page_twentig #wpbody-content > .error {
+	margin: 24px 0 0;
+}
+
+.tw-about__container {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 80px 0 60px;
+	color: #1d2327;
+	--accent-1: #3858e9;
+	--accent-2: #2d46ba;
+}
+
+.tw-about__container h2 {
+	font-size: 1.3125rem;
+	line-height: 1.2;
+	margin: 0 0 22px;
+}
+
+.tw-about__container p {
+	margin-top: 0;
+	font-size: 1rem;
+}
+
+.tw-about__section .button {
+	padding: 6px 22px;
+	font-size: 1rem;
+}
+
+.tw-about__container a,
+.tw-about__container .button-secondary {
+	color: var(--accent-1);
+	text-decoration: none;
+}
+
+.tw-about__container a:is(:hover,:focus) {
+	color: var(--accent-2);
+}
+
+.tw-about__container .button-primary {
+	background-color: var(--accent-1);
+	border-color: var(--accent-1);
+}
+
+.tw-about__container .button-primary:is(:hover,:focus) {
+	background-color: var(--accent-2);
+	border-color: var(--accent-2);
+}
+
+.hero-section {
+	margin-bottom: 80px;
+}
+
+.hero-section h1 {
+	font-size: 3.5rem;
+	line-height: 1.1;
+	margin: 30px 0 18px;
+}
+
+.hero-section p {
+	font-size: 1.5rem;
+	width: 684px;
+}
+
+.hero-section .button {
+	margin-top: 8px;
+}
+
+.links-section {
+	margin-bottom: 24px;
+}
+
+.tw-about__container .tw-about__grid {
+	display: grid;
+	grid-gap: 24px;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	grid-template-areas: 'customizer editor' 'customizer more';
+}
+
+.tw-about__container .tw-about__grid.has-2-panels {
+	grid-template-areas: 'editor more';
+}
+
+.customizer-panel {
+	grid-area: customizer;
+}
+
+.editor-panel {
+	grid-area: editor;
+}
+
+.more-panel {
+	grid-area: more;
+}
+
+.tw-about__container .about-panel {
+	padding: 28px 32px;
+	background-color: #fff;
+	border-radius: 20px;
+}
+
+.about-panel ul li {
+	margin-bottom: 14px;
+	font-size: 0.875rem;
+}
+
+.about-panel ul li a {
+	display: flex;
+	align-items: center;
+}
+
+.about-panel ul,
+.about-panel ul li:last-child {
+	margin-bottom: 0;
+}
+
+.about-panel ul li svg {
+	margin: 1px 10px 0 0;
+	min-width: 24px;
+}
+
+.more-section .about-panel {
+	display: grid;
+	grid-template-columns: 1fr 215px;
+	padding-bottom: 32px;
+}
+
+.more-section h2 {
+	margin-bottom: 18px;
+}
+
+.more-section p {
+	margin-bottom: 25px;
+}
+
+.more-section .about-panel img {
+	margin: auto;
+}
+
+.form-content form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.form-content input[type=email] {
+	width: 250px;
+	max-width: 100%;	
+	margin-right: 8px;
+}
+
+.form-content input.button {
+	background: none !important;
+	color: var(--accent-1);
+	border: 2px solid var(--accent-1);
+	padding: 6px 16px;
+	margin-bottom: 0;
+	font-size: 14px;
+}
+
+.form-content input.button:is(:hover,:focus) {
+	color: var(--accent-2);
+	border-color: var(--accent-2);
+}
+
+.more-section p.privacy {
+	font-size: 12px;
+	margin: 14px 0 0;
+	color: #757575;
+}
+
+.more-section p.privacy a {
+	color: currentColor;
+	text-decoration: underline;
+}
+
+.mc-status a {
+	display: none;
+}
+
+.mc-status {
+	font-size: 1rem;
+	line-height: 1.5;
+	font-weight: 400;
+	margin-top: 18px;
+}
+
+.mc-status.success-message {
+	color: #248a3f;
+}
+
+p.tw-rate-plugin {
+	font-size: 14px;
+	margin: 12px 24px 0 0;
+}
+
+@media screen and (max-width: 782px) {
+
+	.tw-about__container {
+		padding-bottom: 0;
+	}
+
+	.tw-about__section h1 {
+		font-size: 3rem;
+	}
+
+	.tw-about__container .tw-about__grid.tw-about__grid {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+		grid-template-areas: 'customizer' 'editor' 'more';
+	}
+
+	.more-section .about-panel {
+		grid-template-columns: 1fr;
+	}
+
+	.more-section .about-panel img {
+		display: none;
+	}
+}
+
+.rtl .about-panel ul li svg {
+    margin: 1px 0 0 10px;
+}
+
+.rtl .form-content input[type=email] {
+	margin-right: 0;
+	margin-left: 8px;
+}
+
+
+@media screen and (max-width: 599px) {
+
+	.form-content input[type=email],
+	.rtl .form-content input[type=email] {
+		width: 100%;
+		margin: 0 0 10px;
+	}
+
+	.form-content input.button {
+		width: 100%;
+		line-height: 2.15384615;
+	}
+}

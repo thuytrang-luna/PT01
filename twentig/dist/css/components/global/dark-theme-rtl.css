@@ -1,0 +1,35 @@
+:root {
+	--error--color: #ff8b85;
+}
+
+body[class*=dark-theme] .has-black-background-color a:not(.wp-block-button__link) {
+	color: var(--content--color--link, var(--global--color-primary));
+}
+
+body[class*=dark-theme] .tw-cols-card-shadow a:not(.wp-block-button__link),
+body[class*=dark-theme] .tw-cols-card-white a:not(.wp-block-button__link),
+body[class*=dark-theme] .is-style-tw-shadow:not(.has-background) a:not(.wp-block-button__link) {
+	color: currentColor;
+}
+
+.tw-blog-card-shadow[class*=dark-theme] .hentry,
+.tw-blog-card-shadow[class*=dark-theme] .entry-footer,
+.tw-blog-card-shadow[class*=dark-theme] .entry-title a,
+.dark-theme .has-background:not(.has-text-color).has-white-background-color > [class*=__inner-container] {
+	color: #000;	
+}
+
+.dark-theme .has-background:not(.has-text-color).has-green-background-color > [class*=__inner-container],
+.dark-theme .has-background:not(.has-text-color).has-blue-background-color > [class*=__inner-container],
+.dark-theme .has-background:not(.has-text-color).has-purple-background-color > [class*=__inner-container],
+.dark-theme .has-background:not(.has-text-color).has-red-background-color > [class*=__inner-container],
+.dark-theme .has-background:not(.has-text-color).has-orange-background-color > [class*=__inner-container],
+.dark-theme .has-background:not(.has-text-color).has-yellow-background-color > [class*=__inner-container]{
+	--local--color-primary: var(--global--color-background, #000);
+}
+
+.dark-theme .has-background:not(.has-text-color).has-black-background-color > [class*=__inner-container],
+.dark-theme .has-background:not(.has-text-color).has-dark-gray-background-color > [class*=__inner-container],
+.dark-theme .has-background:not(.has-text-color).has-gray-background-color > [class*=__inner-container] {
+	--local--color-primary: var(--global--color-primary, #fff);
+}

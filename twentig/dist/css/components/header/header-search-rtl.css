@@ -1,0 +1,59 @@
+.menu-search:last-child {
+	margin-left: var(--primary-nav--padding);
+}
+
+.header-actions .search-form {
+	margin: 0;
+	position: relative;
+	max-width: 100%;
+}
+
+.header-actions .search-submit {
+	background: transparent !important;
+	border: 0;
+	position: absolute;
+	padding: 2px;
+	margin: 0;
+	left: 0;
+	top: 50%;
+	margin-top: -14px;
+}
+
+.header-actions .search-field:placeholder-shown + .search-submit {
+	pointer-events: none;
+}
+
+.header-actions .search-field:not(:focus) {
+	cursor: pointer;
+}
+
+.header-actions .search-field {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	margin: 0;
+	font-size: var(--primary-nav--font-size-sub-menu);
+	padding: 4px 0 4px 34px;
+	border: 0;
+	border-bottom: 1px solid transparent;
+	color: currentColor;
+	background: transparent !important;
+	width: 0;
+	transition: width 0.4s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.header-actions .search-field::placeholder {
+	color: currentColor;
+}
+
+.header-actions .search-form:focus-within .search-field {
+	width: 200px;
+	border-color: currentColor;
+}
+
+.header-actions .search-field:focus {
+	outline: none;
+}
+
+.header-actions .search-field:focus-visible {
+	outline-offset: 5px;
+}

@@ -1,0 +1,11 @@
+.navigation .page-numbers {
+	min-width: auto;
+}
+
+.navigation .page-numbers:not(.prev):not(.next):not(.dots) {
+	padding: 0 5px;
+}
+
+.navigation .nav-short {
+	display: none;
+}

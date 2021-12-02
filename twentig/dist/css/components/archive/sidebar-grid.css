@@ -1,0 +1,14 @@
+@media only screen and (min-width: 822px) and (max-width:1279px) {
+
+	.tw-blog-grid .site-main {
+		column-gap: 24px;
+	}
+
+	.tw-blog-grid.tw-blog-card .site-main {
+		row-gap: 24px;
+	}
+
+	.tw-blog-columns-3 .site-main {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
